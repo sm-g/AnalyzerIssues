@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Rules for scr projects" ToolsVersion="15.0">
+  <Rules AnalyzerId="Microsoft.CodeAnalysis.CSharp" RuleNamespace="Microsoft.CodeAnalysis.CSharp">
+    <Rule Id="CS4014" Action="Error" />
+  </Rules>
+  <!-- docs: https://github.com/JosefPihrt/Roslynator/tree/master/docs/analyzers -->
+  <Rules AnalyzerId="Roslynator.CSharp.Analyzers" RuleNamespace="Roslynator.CSharp.Analyzers">
+    <!-- Optimize LINQ method call - disable for readability -->
+    <Rule Id="RCS1077" Action="None" />
+    <!-- Call 'ConfigureAwait(false). -->
+    <Rule Id="RCS1090" Action="None" />
+    <!-- Combine 'Enumerable.Where' method chain - disable for readability -->
+    <Rule Id="RCS1112" Action="None" />
+    <!-- Add summary element to documentation comment -->
+    <Rule Id="RCS1139" Action="None" />
+    <!-- Value type object is never equal to null -->
+    <Rule Id="RCS1166" Action="Error" />
+    <!-- Implement exception constructors -->
+    <Rule Id="RCS1194" Action="None" />
+  </Rules>
+  <!-- docs: https://rules.sonarsource.com/csharp -->
+  <Rules AnalyzerId="SonarAnalyzer.CSharp" RuleNamespace="SonarAnalyzer.CSharp">
+    <!-- Collapsible "if" statements should be merged -->
+    <Rule Id="S1066" Action="Info" />
+    <!-- Track uses of "TODO" tags -->
+    <Rule Id="S1135" Action="None" />
+    <!-- "IEnumerable" LINQs should be simplified - disable for readability-->
+    <Rule Id="S2971" Action="None" />
+    <!-- Caller information arguments should not be provided explicitly -->
+    <Rule Id="S3236" Action="Error" />
+    <!-- "ISerializable" should be implemented correctly -->
+    <Rule Id="S3925" Action="None" />
+  </Rules>
+  <!-- docs: https://github.com/DotNetAnalyzers/StyleCopAnalyzers -->
+  <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
+    <!-- XmlCommentAnalysisDisabled -->
+    <Rule Id="SA0001" Action="None" />
+    <!-- SingleLineCommentsMustBeginWithSingleSpace - to use identatnion in comments -->
+    <Rule Id="SA1005" Action="Info" />
+    <!-- ClosingParenthesisMustBeSpacedCorrectly -->
+    <Rule Id="SA1009" Action="None" />
+    <!-- for readability allow base.Foo when it is not requried -->
+    <Rule Id="SA1100" Action="None" />
+    <!-- disable this. -->
+    <Rule Id="SA1101" Action="None" />
+    <Rule Id="SX1101" Action="Warning" />
+    <!-- BlockStatementsMustNotContainEmbeddedComments - to comment inside linq quieries -->
+    <Rule Id="SA1108" Action="None" />
+    <!-- Closing parenthesis should be on line of last parameter -->
+    <Rule Id="SA1111" Action="None" />
+    <!-- SplitParametersMustStartOnLineAfterDeclaration - sometimes useful -->
+    <Rule Id="SA1116" Action="None" />
+    <!-- ParametersMustBeOnSameLineOrSeparateLines - sometimes useful -->
+    <Rule Id="SA1117" Action="Info" />
+    <!-- allow "" -->
+    <Rule Id="SA1122" Action="None" />
+    <!-- allow Regions -->
+    <Rule Id="SA1124" Action="None" />
+    <!-- allow interface following class -->
+    <Rule Id="SA1201" Action="None" />
+    <!-- ElementsMustBeOrderedByAccess -->
+    <Rule Id="SA1202" Action="None" />
+    <!-- allow static after non static -->
+    <Rule Id="SA1204" Action="None" />
+    <!-- underscored fields -->
+    <Rule Id="SA1309" Action="None" />
+    <Rule Id="SX1309" Action="Warning" />
+    <!-- allow public fields -->
+    <Rule Id="SA1401" Action="None" />
+    <!-- allow many types in files - sometimes useful -->
+    <Rule Id="SA1402" Action="None" />
+    <!-- omit arithmetic precendence -->
+    <Rule Id="SA1407" Action="None" />
+    <!-- UseTrailingCommasInMultiLineInitializers -->
+    <Rule Id="SA1413" Action="None" />
+    <!-- allow single line comments for grouping -->
+    <Rule Id="SA1512" Action="None" />
+    <!-- ClosingBraceMustBeFollowedByBlankLine -->
+    <Rule Id="SA1513" Action="None" />
+    <!-- SingleLineCommentMustBePrecededByBlankLine -->
+    <Rule Id="SA1515" Action="None" />
+    <!-- ElementsMustBeSeparatedByBlankLine -->
+    <Rule Id="SA1516" Action="None" />
+    <!-- disable all Documentation Rules -->
+    <Rule Id="SA1600" Action="None" />
+    <Rule Id="SA1601" Action="None" />
+    <Rule Id="SA1602" Action="None" />
+    <Rule Id="SA1604" Action="None" />
+    <Rule Id="SA1605" Action="None" />
+    <Rule Id="SA1606" Action="None" />
+    <Rule Id="SA1607" Action="None" />
+    <Rule Id="SA1608" Action="None" />
+    <Rule Id="SA1610" Action="None" />
+    <Rule Id="SA1611" Action="None" />
+    <Rule Id="SA1612" Action="None" />
+    <Rule Id="SA1615" Action="None" />
+    <Rule Id="SA1616" Action="None" />
+    <Rule Id="SA1618" Action="None" />
+    <Rule Id="SA1619" Action="None" />
+    <Rule Id="SA1620" Action="None" />
+    <Rule Id="SA1622" Action="None" />
+    <Rule Id="SA1623" Action="None" />
+    <Rule Id="SA1624" Action="None" />
+    <Rule Id="SA1625" Action="None" />
+    <Rule Id="SA1626" Action="None" />
+    <Rule Id="SA1627" Action="None" />
+    <Rule Id="SA1633" Action="None" />
+    <Rule Id="SA1634" Action="None" />
+    <Rule Id="SA1635" Action="None" />
+    <Rule Id="SA1636" Action="None" />
+    <Rule Id="SA1637" Action="None" />
+    <Rule Id="SA1638" Action="None" />
+    <Rule Id="SA1640" Action="None" />
+    <Rule Id="SA1641" Action="None" />
+    <Rule Id="SA1642" Action="None" />
+    <Rule Id="SA1643" Action="None" />
+    <Rule Id="SA1648" Action="None" />
+    <Rule Id="SA1649" Action="None" />
+    <Rule Id="SA1651" Action="None" />
+    <Rule Id="SA1652" Action="None" />
+  </Rules>
+</RuleSet>
